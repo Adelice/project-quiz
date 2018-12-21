@@ -1,5 +1,6 @@
 html{
     background-color: coral;
+    margin:20px
 }
 header{
     background-image: url('https://images.pexels.com/photos/1687341/pexels-photo-1687341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -14,4 +15,13 @@ h1{
 #instructions {
     font-size: 20px;
     font-weight: bold;
+    color:green;
+
 } 
+body{
+    margin:20px;
+    padding: 30px;
+}
+form{
+    font-size:15px;
+}
