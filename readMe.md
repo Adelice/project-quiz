@@ -5,7 +5,7 @@
  This project will show if the user choose the answers he will get the score.
  
  ### project setup instructions
-
+  technologies used are bootstrap, javascript
  visual studio code to write codes
  the browser chrome to view the webpage
 
