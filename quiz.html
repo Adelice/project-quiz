@@ -9,6 +9,7 @@
     <link rel="icon" type="image/ico" href="https://previews.123rf.com/images/sarahdesign/sarahdesign1706/sarahdesign170600519/80760411-quiz-board-icon.jpg" />
     <title>Quiz BOArd</title>
     <script src="js/script.js"></script>
+    <cript src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -109,7 +110,7 @@
  </div>
   <div id= "question5">
         
-        <label for="bt16">5.Which of the following bootstrap styles are used to add a dropdown to a tab?</label> 
+        <label for="bt5">5.Which of the following bootstrap styles are used to add a dropdown to a tab?</label> 
         <div>
           <input type="radio" id="f16" name="bt5" value="0">
           <label for="f16">1. .nav, .nav-tabs, .menu</label>
@@ -128,10 +129,11 @@
       </div>
       
    </div>
-   <div class="fl">
-        <button type="submit" class="btn-success">Submit</button>
-        <span id="display">Your score is:0</span>
-    </div>
+   <div class="quiz-buttons">
+        <button class="bg-success" type="submit" name="button">SCORE</button>
+        <button class="bg-info" type="button" name="button" onclick="reload();">RELOAD</button>
+      </div>
+      
  </form>
 </body>
 </html>

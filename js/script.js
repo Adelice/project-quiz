@@ -1,24 +1,18 @@
 var testResults = function(one, two , three ,four , five ,){
     return one + two + three + four + five ;
     }
+      $("form#form").submit(function(event){
+        var bt1 = parseInt($("input:radio[name=bt1]:checked").val());
+        var bt2 = parseInt($("input:radio[name=bt2]:checked").val());
+        var bt3 = parseInt($("input:radio[name=bt3]:checked").val());
+        var bt4 = parseInt($("input:radio[name=bt4]:checked").val());
+        var bt5= parseInt($("input:radio[name=bt5]:checked").val());
  
-    $(document).ready(function(){
-      $(".begin").click(function(){
-        $("#form").fadeToggle("slow");
-      });
- 
-      $("form#test").submit(function(event){
-        var question1 = parseInt($("input:radio[name=question1]:checked").val());
-        var question2 = parseInt($("input:radio[name=question2]:checked").val());
-        var question3 = parseInt($("input:radio[name=question3]:checked").val());
-        var question4 = parseInt($("input:radio[name=question4]:checked").val());
-        var question5= parseInt($("input:radio[name=question5]:checked").val());
- 
-        var result = testResults(question1, question2 ,question3, question4, question5);
+        var result = testResults(bt1,bt2,bt3,bt4,bt5);
  
         $("#display").text("Your score is:" + result);
  
-        event.preventDefault();
-        $(".fl").show();
+       /* event.preventDefault();
+        $(".fl").show();*/
       });
-    });
+    
