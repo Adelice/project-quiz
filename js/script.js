@@ -1,6 +1,10 @@
 var testResults = function(one, two , three ,four , five ,){
     return one + two + three + four + five ;
     }
+    $(document).ready(function(){
+      $(".begin").click(function(){
+        $("#form").fadeToggle("slow");
+      });
       $("form#form").submit(function(event){
         var bt1 = parseInt($("input:radio[name=bt1]:checked").val());
         var bt2 = parseInt($("input:radio[name=bt2]:checked").val());
