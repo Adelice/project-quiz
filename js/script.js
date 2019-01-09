@@ -16,7 +16,7 @@ var testResults = function(one, two , three ,four , five ){
  
         $("#display").text("Your score is:" + result);
  
-       /* event.preventDefault();
-        $(".fl").show();*/
+       event.preventDefault();
+        $(".fl").show();
       });
     
