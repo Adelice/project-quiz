@@ -1,4 +1,4 @@
-var testResults = function(one, two , three ,four , five ,){
+var testResults = function(one, two , three ,four , five ){
     return one + two + three + four + five ;
     }
     $(document).ready(function(){
