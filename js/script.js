@@ -2,9 +2,7 @@ var testResults = function(one, two , three ,four , five ){
     return one + two + three + four + five ;
     }
     $(document).ready(function(){
-      $(".begin").click(function(){
-        $("#test").fadeToggle("slow");
-      });
+     
       $("form#test").submit(function(event){
         var bt1 = parseInt($("input:radio[name=bt1]:checked").val());
         var bt2 = parseInt($("input:radio[name=bt2]:checked").val());
@@ -14,9 +12,10 @@ var testResults = function(one, two , three ,four , five ){
  
         var result = testResults(bt1,bt2,bt3,bt4,bt5);
  
-        $("#display").text("Your score is:" + result);
+        $("#display").text("Your score is:" + result) + "%";
  
        event.preventDefault();
-        $(".fl").show();
+        $(".final").show();
       });
+    });
     
