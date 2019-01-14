@@ -12,7 +12,7 @@ var testResults = function(one, two , three ,four , five ){
  
         var result = testResults(bt1,bt2,bt3,bt4,bt5);
  
-        $("#display").text("Your score is:" + result) + "%";
+        $("#display").text("Your score is:" + result + "%");
  
        event.preventDefault();
         $(".final").show();
